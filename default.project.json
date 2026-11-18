@@ -1,67 +1,47 @@
 {
-  "name": "house-dodge",
+  "name": "SuperBrainrot",
   "tree": {
     "$className": "DataModel",
-    "Players": {
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
       "$properties": {
-        "CharacterAutoLoads": false
-      }
+        "SerializedOverrides": {
+          "BinaryString": ""
+        }
+      },
+      "$path": "src/ReplicatedStorage"
     },
     "ServerScriptService": {
-      "Server": {
-        "$path": "src/server"
-      }
+      "$className": "ServerScriptService",
+      "$properties": {
+        "SerializedOverrides": {
+          "BinaryString": ""
+        }
+      },
+      "$path": "src/ServerScriptService"
     },
     "StarterPlayer": {
+      "$className": "StarterPlayer",
       "StarterPlayerScripts": {
-        "Client": {
-          "$path": "src/client"
-        }
-      }
-    },
-    "Workspace": {
-      "$properties": {
-        "FilteringEnabled": true
-      },
-      "Baseplate": {
-        "$className": "Part",
+        "$className": "StarterPlayerScripts",
         "$properties": {
-          "Anchored": true,
-          "Color": [
-            0.38823,
-            0.37254,
-            0.38823
-          ],
-          "Locked": true,
-          "Position": [
-            0,
-            -10,
-            0
-          ],
-          "Size": [
-            512,
-            20,
-            512
-          ]
+          "SerializedOverrides": {
+            "BinaryString": ""
+          }
+        },
+        "$path": "src/StarterPlayerScripts"
+      },
+      "$properties": {
+        "AvatarJointUpgrade": "Enabled",
+        "CameraMaxZoomDistance": 128.0,
+        "CharacterBreakJointsOnDeath": false,
+        "CharacterUseJumpPower": false,
+        "SerializedOverrides": {
+          "BinaryString": ""
+        },
+        "UseImprovedCharacterEvents": {
+          "Enum": 0
         }
-      }
-    },
-    "Lighting": {
-      "$properties": {
-        "Ambient": [
-          0,
-          0,
-          0
-        ],
-        "Brightness": 2,
-        "GlobalShadows": true,
-        "Outlines": false,
-        "Technology": "Voxel"
-      }
-    },
-    "SoundService": {
-      "$properties": {
-        "RespectFilteringEnabled": true
       }
     }
   }

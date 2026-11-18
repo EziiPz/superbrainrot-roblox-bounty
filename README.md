@@ -1,21 +1,39 @@
-# roblox-brainrot-01 starter
+# SuperBrainrot
 
-A working entry for make.fun's "Make the best AI Roblox brainrot game" bounty (roblox-brainrot-01), laid out as your
-repository: a Rojo project whose game is a grey square that moves with the arrow keys. It is a starting point, not a
-winner, and not yet the 3D game the bounty asks for: its square is drawn on the screen, not in Roblox's 3D world.
+SuperBrainrot is a Roblox brainrot egg tycoon. Roll the egg's rarity at the roll stick, hatch it at the egg place, and collect the brainrot it reveals. Carry brainrots to the ten platforms on your base to display them and earn cash over time. Spend that cash to improve egg luck and make the roll stick faster.
 
-- `main.ts` (Node 22, standard library only) hands the game in: it copies `game.rbxl`, `src/`, `screenshots/` and
-  `PLAY.json` to `/output`, leaving out every name that starts with a dot (such as `.gitkeep` or `.DS_Store`, which
-  fail an entry), and writes `/output/dossier.json` with `vendor/makefun-roblox.ts`, the kit's copy, unchanged.
-- `game.rbxl` is the place Rojo builds from `src/` and `default.project.json`; `screenshots/` holds three captures of
-  it; `PLAY.json` names no place yet, so the gate refuses the starter as it stands until it names your published one.
-- One of your screenshots must also be your game's first thumbnail on Roblox: the same picture, uploaded on the
-  Creator Dashboard with your game's icon.
-- `TOUR.json` is an example of the optional tour: for each screenshot, the keys that bring the game to that screen.
+Entered in: [make.fun](https://make.fun)
 
-Run it as the grader does, writing `out/` in place of `/output`:
+[![make.fun](https://img.shields.io/badge/make.fun-build%20for%20roblox--brainrot--01-blue)](https://make.fun)
+[![Recording](https://img.shields.io/badge/transcripts-recorded%20live-2ea44f)](https://make.fun)
+[![Roblox](https://img.shields.io/badge/roblox-SuperBrainrot-red)](https://www.roblox.com/games/114987169439816)
 
-    mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+Play SuperBrainrot: [roblox.com/games/114987169439816](https://www.roblox.com/games/114987169439816)
 
-The rules are on the bounty's page (/bounty/roblox-brainrot-01) and in the kit's RULES.txt,
-which gives every command in order (Before you submit, then Enter).
+## How it is built
+
+The game world is saved from Roblox Studio in `game.rbxl`. The matching Luau sources live in `src/`, which holds the same scripts as files synced back from the place. The Rojo project description maps those files to their Roblox services, while the Studio-saved place remains the game submitted for play.
+
+`main.ts` prepares the make.fun output by copying `game.rbxl`, `PLAY.json`, `src/`, and `screenshots/`, then writing `dossier.json` with the vendored make.fun library. This keeps the published place, the editable scripts, and the entry metadata together in the submission.
+
+## How to run
+
+Run the local output builder from the repository root:
+
+```sh
+mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
+```
+
+The command creates the local `out/` directory with the entry files and dossier used for verification.
+
+## Layout
+
+- `game.rbxl` — Roblox Studio place for SuperBrainrot.
+- `default.project.json` — Rojo mapping for the source tree.
+- `src/ReplicatedStorage/` — shared configuration and remote definition.
+- `src/ServerScriptService/` — authoritative tycoon and hatching logic.
+- `src/StarterPlayerScripts/` — HUD and client-side interactions.
+- `PLAY.json` — the published Roblox place link and IDs.
+- `screenshots/` — cover, hatch, upgrades/base, and map views.
+- `TOUR.json` — screenshot tour steps and their keypresses.
+- `main.ts` — local make.fun output builder.
