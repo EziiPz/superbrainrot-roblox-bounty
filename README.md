@@ -4,9 +4,9 @@ SuperBrainrot is a Roblox brainrot egg tycoon. Roll the egg's rarity at the roll
 
 Entered in: [make.fun](https://make.fun)
 
-[![make.fun](https://img.shields.io/badge/make.fun-build%20for%20roblox--brainrot--01-blue)](https://make.fun)
-[![Recording](https://img.shields.io/badge/transcripts-recorded%20live-2ea44f)](https://make.fun)
-[![Roblox](https://img.shields.io/badge/roblox-SuperBrainrot-red)](https://www.roblox.com/games/114987169439816)
+[![make.fun · roblox-brainrot-01](https://make.fun/badge/roblox-brainrot-01.svg)](https://make.fun/bounty/roblox-brainrot-01?utm_source=github&utm_medium=readme&utm_campaign=roblox-brainrot-01)
+[![rank](https://make.fun/badge/roblox-brainrot-01/EziiPz/superbrainrot-roblox-bounty/rank.svg)](https://make.fun/bounty/roblox-brainrot-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=roblox-brainrot-01)
+[![reward](https://make.fun/badge/roblox-brainrot-01/EziiPz/superbrainrot-roblox-bounty/reward.svg)](https://make.fun/bounty/roblox-brainrot-01?utm_source=github&utm_medium=readme&utm_campaign=roblox-brainrot-01)
 
 Play SuperBrainrot: [roblox.com/games/114987169439816](https://www.roblox.com/games/114987169439816)
 
